@@ -13,7 +13,7 @@ public class StudentMarksheetPercentage {
 
     public static void main(String[] args) {
         StudentMarksheetPercentage studentMarksheetPercentage=new StudentMarksheetPercentage();     // creating class object to call non-static method to static area
-        studentMarksheetPercentage.score();                     //calling the method using class object
+        studentMarksheetPercentage.score();                                                         //calling the method using class object
 
     }
 

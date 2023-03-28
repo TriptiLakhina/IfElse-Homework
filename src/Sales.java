@@ -30,19 +30,14 @@ public class Sales {
 
 
         // Storing variables
-        double salescom20 = (salesamount * 0.20);
-        double salescom10 = (salesamount * 0.10);
-        double salescom5 = (salesamount * 0.05);
-        double salescom2 = (salesamount / 50);
-
-
-//        double salescom10 = (salesamount * (10/100));     // This way of percentage calculation didn't work
-//        double salescom5 = (salesamount * (5 / 100));     // This way of percentage calculation didn't work
-//        double salescom2 = (salesamount * (2 / 100));     // This way of percentage calculation didn't work
+        double salescom20 = (salesamount * 20/100);
+        double salescom10 = (salesamount * 10/100);
+        double salescom5 = (salesamount * 5 / 100);
+        double salescom2 = (salesamount * 2 / 100);
 
 
         if (salesamount >= 50000) {
-            System.out.println("Sales commission is 35% i.e., " + (0.35 * salesamount));
+            System.out.println("Sales commission is 35% i.e., " + (salesamount * 35/100 ));
         } else if (salesamount >= 30000.00) {
             System.out.println("Sales commission is 20% i.e., " + salescom20);
 

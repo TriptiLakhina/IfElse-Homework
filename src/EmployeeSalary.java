@@ -22,10 +22,10 @@ public class EmployeeSalary {
     void employeedata(){
 
         // Writing message for the user for what to enter
-        System.out.println("Please enter Employee id in int, employee name in string & basic salary in double. Please press enter after each input.");
+        System.out.println("Please enter Employee id, employee name & basic salary. Please press enter after each input.");
 
         //Storing variables using scanner object
-        int employeeid=scanner.nextInt();
+        String employeeid=scanner.next();
         String emplyeename=scanner.next();
         double basicsalary=scanner.nextDouble();
 
@@ -36,7 +36,7 @@ public class EmployeeSalary {
         double pf=basicsalary * 20/100;
         double grosssalary=basicsalary+hra+da+ta-pf;
 
-        // Writing print command for required output.
+        // Writing print command for required output
         System.out.println("HRA - " + hra);
         System.out.println("DA - " + da);
         System.out.println("TA - " + ta);
