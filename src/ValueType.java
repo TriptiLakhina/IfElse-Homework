@@ -12,15 +12,15 @@ public class ValueType {
 
         if ((value >= 'a' && value <= 'z') || (value >= 'A' && value <= 'Z')) {
 
-            System.out.println(value + " is an alphabet.");
+            System.out.println("This is an alphabet.");
 
         } else if (value >= '0' && value <= '9') {
 
-            System.out.println(value + " is a number.");
+            System.out.println("This is a number.");
 
         } else {
 
-            System.out.println(value + " is a symbol.");
+            System.out.println("This is a symbol.");
         }
     }
 }
