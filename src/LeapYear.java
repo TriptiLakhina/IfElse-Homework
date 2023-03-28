@@ -1,7 +1,10 @@
 import java.util.Scanner;
 
 public class LeapYear {
+
+    // Creating object for Scanner class to take input
     Scanner scanner=new Scanner(System.in);
+
 
     public static void main (String[] args) {
 
@@ -10,8 +13,10 @@ public class LeapYear {
 
         //calling method using class object
         leapYear.checkleapyear();
-
     }
+
+
+    // No return type no parameters
     public void checkleapyear(){
         // message to user for what to enter
         System.out.println("Please enter year in int value");

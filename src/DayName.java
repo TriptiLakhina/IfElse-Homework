@@ -1,20 +1,33 @@
 import java.util.Scanner;
 
 public class DayName {
+
+    // Creating object for Scanner class to take input
     Scanner scanner=new Scanner(System.in);
+
+    // Global variable
     String day1 ="Monday";
 
 
 
     public static void main(String[] args) {
+
+        // creating class object to call non-static method to static area
         DayName dayName=new DayName();
+
+        //calling the method using class object
         dayName.daycheck();
     }
 
 
 
+    // No return type no parameters
     void daycheck(){
+
+        // Writing message for the user for what to enter
         System.out.println("Enter any number from 1-7");
+
+        //Storing variables using scanner object
         int daynumber=scanner.nextInt();
 
 

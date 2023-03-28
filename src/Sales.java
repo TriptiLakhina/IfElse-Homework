@@ -1,43 +1,45 @@
 import java.util.Scanner;
 
 public class Sales {
-    Scanner scanner=new Scanner(System.in);
-    int salesid;
-    String sellers_name;
-    double salesamount,salarybasic;
+    Scanner scanner=new Scanner(System.in);         // Creating object for Scanner class to take input
+
 
 
 
     public static void main(String[] args) {
-        Sales sales=new Sales();
-        sales.salescommission();
+        Sales sales=new Sales();                    // creating class object to call non-static method to static area
+        sales.salescommission();                    // calling the method using class object
 
     }
 
 
 
+    // No return type no parameters
     void salescommission() {
-        System.out.println("Enter sales id in int");
-        int salesid = scanner.nextInt();
+        System.out.println("Enter sales id in int");              // message to user for what to enter
+        int salesid = scanner.nextInt();                          // Storing variables using scanner object
 
-        System.out.println("Enter seller's name in string");
-        String sellersname = scanner.next();
+        System.out.println("Enter seller's name in string");      // message 2 to user for what to enter
+        String sellersname = scanner.next();                      // Storing variables for 2nd user input using scanner object
 
-        System.out.println("Enter sales amount in double");
-        double salesamount = scanner.nextDouble();
+        System.out.println("Enter sales amount in double");       // message 3 to user for what to enter
+        double salesamount = scanner.nextDouble();                // Storing variables for 3rd user input using scanner object
 
-        System.out.println("Enter salary basic in double");
-        double salarybasic = scanner.nextDouble();
+        System.out.println("Enter salary basic in double");       // message 4 to user for what to enter
+        double salarybasic = scanner.nextDouble();                // Storing variables for 4th user input using scanner object
 
 
+        // Storing variables
         double salescom20 = (salesamount * 0.20);
         double salescom10 = (salesamount * 0.10);
         double salescom5 = (salesamount * 0.05);
         double salescom2 = (salesamount / 50);
 
-//        double salescom10 = (salesamount * (10/100));     // This percentage method didn't work
-//        double salescom5 = (salesamount * (5 / 100));     // This percentage method didn't work
-//        double salescom2 = (salesamount * (2 / 100));     // This percentage method didn't work
+
+//        double salescom10 = (salesamount * (10/100));     // This way of percentage calculation didn't work
+//        double salescom5 = (salesamount * (5 / 100));     // This way of percentage calculation didn't work
+//        double salescom2 = (salesamount * (2 / 100));     // This way of percentage calculation didn't work
+
 
         if (salesamount >= 50000) {
             System.out.println("Sales commission is 35% i.e., " + (0.35 * salesamount));
